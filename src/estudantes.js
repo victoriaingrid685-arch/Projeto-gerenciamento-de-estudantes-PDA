@@ -84,7 +84,7 @@ function relatorioAprovados() {
         console.log("Nenhum aluno aprovado.");
     } else {
         console.log("=== Aprovados ===");
-        aprovados.forEach(a => console.log(`${a.nome} | Média: ${mediaAluno(a).toFixed(2)}`));
+        aprovados.forEach(a => console.log(`${a.nome} | Media: ${mediaAluno(a).toFixed(2)}`));
     }
 }
 
@@ -97,7 +97,7 @@ function relatorioRecuperacao() {
         console.log("Nenhum aluno em recuperação.");
     } else {
         console.log("=== Recuperação ===");
-        recuperacao.forEach(a => console.log(`${a.nome} | Média: ${mediaAluno(a).toFixed(2)}`));
+        recuperacao.forEach(a => console.log(`${a.nome} | Media: ${mediaAluno(a).toFixed(2)}`));
     }
 }
 
@@ -107,7 +107,7 @@ function relatorioReprovados() {
         console.log("Nenhum aluno reprovado.");
     } else {
         console.log("=== Reprovados ===");
-        reprovados.forEach(a => console.log(`${a.nome} | Média: ${mediaAluno(a).toFixed(2)}`));
+        reprovados.forEach(a => console.log(`${a.nome} | Media: ${mediaAluno(a).toFixed(2)}`));
     }
 }
 

@@ -24,7 +24,7 @@ function exibirMenu() {
 1. Cadastrar novo estudante
 2. Listar todos os estudantes
 3. Procurar estudante pelo nome
-4. Calcular média de um aluno
+4. Calcular  de um aluno
 5. Calcular média da turma
 6. Mostrar melhor aluno
 7. Lista de aprovados
@@ -88,19 +88,19 @@ do {
             break;
 
         case 4:
-            const nomeBusca = readline.question("Digite o nome do estudante para calcular média: ");
+            const nomeBusca = readline.question("Digite o nome do estudante para calcular media: ");
             const encontrados = procurarEstudante(nomeBusca, false);
             if (encontrados.length === 0) {
                 console.log("Nenhum estudante encontrado.");
             } else {
                 for (const aluno of encontrados) {
-                    console.log(`${aluno.nome} - Média: ${mediaAluno(aluno).toFixed(2)}`);
+                    console.log(`${aluno.nome} - Media: ${mediaAluno(aluno).toFixed(2)}`);
                 }
             }
             break;
 
         case 5:
-            console.log(`Média geral da turma: ${mediaGeral().toFixed(2)}`);
+            console.log(`Media geral da turma: ${mediaGeral().toFixed(2)}`);
             break;
 
         case 6:
@@ -108,7 +108,7 @@ do {
             if (!topAluno) {
                 console.log("Ainda não há alunos cadastrados.");
             } else {
-                console.log(`Aluno com melhor média: ${topAluno.nome} | Média: ${mediaAluno(topAluno).toFixed(2)}`);
+                console.log(`Aluno com melhor media: ${topAluno.nome} | Media: ${mediaAluno(topAluno).toFixed(2)}`);
             }
             break;
 
